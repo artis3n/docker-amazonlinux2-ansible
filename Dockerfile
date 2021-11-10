@@ -4,7 +4,7 @@ ENV container=docker
 
 ENV pip_packages "ansible"
 
-# Intentionally break layer caching to take in updates
+# Install systemd -- See https://hub.docker.com/_/centos/
 RUN yum -y update; yum clean all
 
 # Install requirements.
