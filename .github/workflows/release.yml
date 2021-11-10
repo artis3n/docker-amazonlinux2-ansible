@@ -3,6 +3,9 @@ name: Deploy Docker Image
 
 on:
   workflow_dispatch:
+  schedule:
+    # weekly - on Sundays
+    - cron: 0 9 * * 0
 
 jobs:
 

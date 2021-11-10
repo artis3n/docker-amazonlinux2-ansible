@@ -4,6 +4,9 @@ ENV container=docker
 
 ENV pip_packages "ansible"
 
+# Intentionally break layer caching to take in updates
+RUN yum -y update; yum clean all
+
 # Install requirements.
 RUN yum makecache fast \
  && yum -y install deltarpm epel-release initscripts \
