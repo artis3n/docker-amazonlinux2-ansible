@@ -1,6 +1,7 @@
 # Amazon Linux 2 Ansible Test Image
 
 [![.github/workflows/test.yml](https://github.com/artis3n/docker-amazonlinux2-ansible/actions/workflows/test.yml/badge.svg)](https://github.com/artis3n/docker-amazonlinux2-ansible/actions/workflows/test.yml)
+[![Deploy Docker Image](https://github.com/artis3n/docker-amazonlinux2-ansible/actions/workflows/release.yml/badge.svg)](https://github.com/artis3n/docker-amazonlinux2-ansible/actions/workflows/release.yml)
 
 Amazon Linux 2 Docker container for Ansible playbook and role testing.
 
