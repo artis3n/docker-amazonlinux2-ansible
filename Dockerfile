@@ -1,5 +1,5 @@
 FROM amazonlinux:2
-LABEL maintainer="Artis3n"
+LABEL maintainer="Jeff Geerling"
 ENV container=docker
 
 ENV pip_packages "ansible"

@@ -4,7 +4,7 @@
 
 Amazon Linux 2 Docker container for Ansible playbook and role testing.
 
-This is a temporary fork of <https://github.com/geerlingguy/docker-amazonlinux2-ansible> that installs Ansible over Python 3 and more effectively caches the Dockerfile layers.
+This is a temporary fork of <https://github.com/geerlingguy/docker-amazonlinux2-ansible> that installs Ansible over Python 3 instead of Python 2.
 
 ## Tags
 
