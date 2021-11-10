@@ -18,8 +18,7 @@ RUN yum makecache fast \
       python3 \
       python3-pip \
       python3-wheel \
- && yum clean all \
- && rm -rf /var/cache
+ && yum clean all
 
 # Install Ansible via Pip.
 RUN pip3 install $pip_packages
