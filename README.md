@@ -1,8 +1,10 @@
 # Amazon Linux 2 Ansible Test Image
 
-[![Docker Automated build](https://img.shields.io/docker/automated/geerlingguy/docker-amazonlinux2-ansible.svg?maxAge=2592000)](https://hub.docker.com/r/geerlingguy/docker-amazonlinux2-ansible/)
+[![.github/workflows/test.yml](https://github.com/artis3n/docker-amazonlinux2-ansible/actions/workflows/test.yml/badge.svg)](https://github.com/artis3n/docker-amazonlinux2-ansible/actions/workflows/test.yml)
 
 Amazon Linux 2 Docker container for Ansible playbook and role testing.
+
+This is a temporary fork of <https://github.com/geerlingguy/docker-amazonlinux2-ansible> that installs Ansible over Python 3 and more effectively caches the Dockerfile layers.
 
 ## Tags
 

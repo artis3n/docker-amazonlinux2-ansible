@@ -1,11 +1,8 @@
 FROM amazonlinux:2
-LABEL maintainer="Jeff Geerling"
+LABEL maintainer="Artis3n"
 ENV container=docker
 
 ENV pip_packages "ansible"
-
-# Install systemd -- See https://hub.docker.com/_/centos/
-RUN yum -y update; yum clean all
 
 # Install requirements.
 RUN yum makecache fast \
@@ -18,7 +15,8 @@ RUN yum makecache fast \
       python3 \
       python3-pip \
       python3-wheel \
- && yum clean all
+ && yum clean all \
+ && rm -rf /var/cache
 
 # Install Ansible via Pip.
 RUN pip3 install $pip_packages
