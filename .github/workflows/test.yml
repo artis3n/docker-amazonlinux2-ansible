@@ -27,6 +27,18 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: false
+          # load: true  # Can't load multi-platform but want to ensure building each is successful
+          tags: artis3n/docker-amazonlinux2-ansible:ci
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+      
+      # Is cached so no extra work besides exporting to local docker daemon
+      - name: Build
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          platforms: linux/amd64  # no arm64 in order to load:true successfully
+          push: false
           load: true
           tags: artis3n/docker-amazonlinux2-ansible:ci
           cache-from: type=gha
